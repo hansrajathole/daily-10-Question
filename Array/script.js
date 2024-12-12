@@ -75,26 +75,24 @@
 //====================================================
 // --------------- Reverse Array
 
-let arr = [10, 20, 30, 40, 50]
+// let arr = [10, 20, 30, 40, 50]
 
-let n = 12
-n = n%arr.length
-console.log(arr);
-console.log(reverse(arr,0,n-1));
-console.log(reverse(arr,n,arr.length-1));
+// let n = 12
+// n = n%arr.length
+// console.log(arr);
+// console.log(reverse(arr,0,n-1));
+// console.log(reverse(arr,n,arr.length-1));
 // console.log(reverse(arr,0,arr.length-1));
 
-
-function reverse(arr,i,j){
-    
-    let temp = null
-    while(i<j){
-        temp = arr[i]
-        arr[i] = arr[j]
-        arr[j] = temp
-        i++
-        j--
-    }
-    // console.log(arr);
-    return arr   
-}
+// function reverse(arr,i,j){    
+//     let temp = null
+//     while(i<j){
+//         temp = arr[i]
+//         arr[i] = arr[j]
+//         arr[j] = temp
+//         i++
+//         j--
+//     }
+//     // console.log(arr);
+//     return arr   
+// }
