@@ -116,22 +116,19 @@
 //=============================================
 // -------print reverse array using recursionn
 
-let arr = [2,3,2,5,4,7]
+let arr = [1,2,3,4,5]
 let temp = 0
 function revArr(i,n){
-    if(i>n){
+    if(i>n/2){
         console.log(arr);
         return
     }else{
        
         temp = arr[i]
-        arr[i] = arr[n]
-        arr[n] = temp
-        revArr(i+1,n-1) 
+        arr[i] = arr[n-1-i]
+        arr[n-1-i] = temp
+        revArr(i+1,n) 
     }
-
 }
-
-
-let n = arr.length-1
+let n = arr.length
 revArr(0,n)
