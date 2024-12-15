@@ -96,3 +96,34 @@
 //     // console.log(arr);
 //     return arr   
 // }
+
+
+// let str = "naman"
+// let n = str.length
+
+// function pall(i){
+//     if(i>n/2) return true
+//     if(str[i]!==str[n-i-1]) return false
+//     return pall(i+1)
+// }
+
+// console.log(pall(0))
+
+
+// let n = 5
+// let i = 1
+// let last =0
+// let current = 1
+// console.log(last);
+
+// function fibo(i,n){
+//     if(i>n)return
+//     let sum = last + current
+//     console.log(sum);
+//     last = current
+//     current = sum
+//     fibo(i+1,n)
+    
+// }
+
+// fibo(i,5)
