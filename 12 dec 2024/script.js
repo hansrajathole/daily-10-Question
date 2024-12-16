@@ -49,7 +49,7 @@
 //     }
 // }
 // max = Math.max(max,count)
-// console.log("Maximum 1 in this "+max);
+// console.log("Maximum 1 after 0 in this array "+max);
 
 
 
