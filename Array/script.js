@@ -127,3 +127,26 @@
 // }
 
 // fibo(i,5)
+
+
+// let arr = "rajbilwe"
+
+// //first way
+// let revArr = ""
+// for(let i = arr.length-1 ; i>=0 ; i--){
+//     revArr += arr[i]
+// }
+// console.log(revArr);
+
+// // second way
+// let revStr = arr.split('').reverse().join('')
+// console.log(revStr);
+
+
+let arr =  [2,4,6,7,8,10]
+
+for(let i = 0 ; i<arr.length-1 ; i++){
+    for(let j = i + 1 ; j<arr.length ; j++){
+        console.log("("+arr[i]+","+arr[j]+")");
+    }
+}
