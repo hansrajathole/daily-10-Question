@@ -97,7 +97,8 @@
 //     return arr   
 // }
 
-
+//===================================================
+//--------- check string pallindrom or not-----------
 // let str = "naman"
 // let n = str.length
 
@@ -109,15 +110,18 @@
 
 // console.log(pall(0))
 
+//=============================================
+// -------------- fibonacci series-------------
 
 // let n = 5
 // let i = 1
 // let last =0
 // let current = 1
 // console.log(last);
+// console.log(current);
 
 // function fibo(i,n){
-//     if(i>n)return
+//     if(i>n-2)return
 //     let sum = last + current
 //     console.log(sum);
 //     last = current
@@ -128,9 +132,9 @@
 
 // fibo(i,5)
 
-
+//===================================================
+//------------------ Reverse string -----------------
 // let arr = "rajbilwe"
-
 // //first way
 // let revArr = ""
 // for(let i = arr.length-1 ; i>=0 ; i--){
@@ -143,10 +147,14 @@
 // console.log(revStr);
 
 
-let arr =  [2,4,6,7,8,10]
-
-for(let i = 0 ; i<arr.length-1 ; i++){
-    for(let j = i + 1 ; j<arr.length ; j++){
-        console.log("("+arr[i]+","+arr[j]+")");
-    }
-}
+//===================================================
+//------------Total Number of pair ------------------
+// let arr =  [2,4,6,8,10]
+// let tp = 0
+// for(let i = 0 ; i<arr.length-1 ; i++){
+//     for(let j = i + 1 ; j<arr.length ; j++){
+//         console.log("("+arr[i]+","+arr[j]+")");
+//         tp++
+//     }
+// }
+// console.log(tp);
