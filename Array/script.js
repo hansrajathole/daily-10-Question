@@ -160,13 +160,66 @@
 // console.log(tp);
 
 
-let arr = [2,4,6,8,10]
+// let arr = [2,4,6,8,10]
 
-for(let i = 0 ; i<arr.length ; i++){
-    let str = ""
-    console.log(arr[i]);
-    for(let j = i + 1 ; j<arr.length ; j++){
-        str += arr[j]+" "   
-    }
-    console.log(str);  
-}
+// for(let i = 0 ; i<arr.length ; i++){
+//     let str = ""
+//     console.log(arr[i]);
+//     for(let j = i + 1 ; j<arr.length ; j++){
+//         str += arr[j]+" "   
+//     }
+//     console.log(str);  
+// }
+
+
+//===================================================
+//---count how many Zero and one in this array ------
+
+// let arr = [0,0,0,1,1,0,1,1,0,0,1,0]
+
+// let zeroCount = 0
+// let oneCount = 0
+
+// function count(arr,zeroCount,oneCount){
+    
+
+//     for(let i = 0 ; i<arr.length ; i++){
+//         if(arr[i]===1){
+//             oneCount++
+//         }
+//         if(arr[i]===0){
+//             zeroCount++
+//         }
+//     }
+
+//     return [zeroCount,oneCount]
+// }
+
+// let ans = count(arr,zeroCount,oneCount)
+
+// console.log("in this array Zero "+ans[0]+" and one "+ans[1]);
+
+
+// let n = 5
+// let str = ""
+// for(let i = 1 ; i<=n ; i++){
+//     for(let j = n-i; j>0 ; j--){
+//         str +="  "
+        
+//     }
+//     for(let k = 1 ; k <= i*2 ; k++){
+//         if(k%2!==0){
+//             str +="* "
+//         }else{
+//             str +="  "
+//         }
+//     }
+//     console.log(str);
+//     str = ""
+    
+// }
+
+
+
+
+
