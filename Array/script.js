@@ -261,3 +261,13 @@
 
 
 
+let arr = [10,20,30]
+
+for(let i = 0 ; i <arr.length ; i++){
+    let str = ''
+    for(let j = 0 ; j<arr.length ;j++){
+        str +=arr[i]+","+arr[j]+" "
+    }
+    console.log(str);
+    
+}
