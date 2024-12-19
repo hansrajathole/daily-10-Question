@@ -205,7 +205,6 @@
 // for(let i = 1 ; i<=n ; i++){
 //     for(let j = n-i; j>0 ; j--){
 //         str +="  "
-        
 //     }
 //     for(let k = 1 ; k <= i*2 ; k++){
 //         if(k%2!==0){
@@ -219,6 +218,45 @@
     
 // }
 
+
+
+//==========================================================
+//---------------------Bubble short ------------------------
+
+
+// let arr = [10,8,16,2,5,1]
+// for(let i = 0 ; i<arr.length-1;i++){
+//     for(let j = 0 ; j<arr.length-i-1 ; j++){
+//         if(arr[j]>arr[j+1]){
+//             let temp = arr[j]
+//             arr[j] = arr[j+1]
+//             arr[j+1] = temp
+//         }
+//     }
+// }
+
+// console.log(arr);
+
+
+
+//===========================================================
+//------------------Extreme print in an array ---------------
+
+// let arr = [10,20,30,40,50]
+// let newArr =[]
+// let indx = 0
+// for(let i = 0 ; i<arr.length/2 ; i++){
+
+//     if(arr[i]=== arr[arr.length-1-i]){
+//         newArr[indx++] =  arr[i]
+
+//     }else{
+//     newArr[indx++] =  arr[i]
+//     newArr[indx++] = arr[arr.length-1-i];
+//     }
+// }
+
+// console.log(newArr);
 
 
 
