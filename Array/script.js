@@ -260,14 +260,38 @@
 
 
 
+//=============================================
+//----------- print pair of two number---------
 
-let arr = [10,20,30]
+// let arr = [10,20,30]
 
-for(let i = 0 ; i <arr.length ; i++){
-    let str = ''
-    for(let j = 0 ; j<arr.length ;j++){
-        str +=arr[i]+","+arr[j]+" "
-    }
-    console.log(str);
+// for(let i = 0 ; i <arr.length ; i++){
+//     let str = ''
+//     for(let j = 0 ; j<arr.length ;j++){
+//         str +=arr[i]+","+arr[j]+" "
+//     }
+//     console.log(str);  
     
-}
+// }
+
+
+//============================================
+//------------Zero swipt to left -------------
+
+// let arr = [0,1,0,1,0,0,1,1,0,1,1,0,0]
+
+// let c0 = 0
+// let c1 = 0
+
+// for(let i = 0 ;i<arr.length ; i++){
+//     if(arr[i]===0)c0++
+//     if(arr[i]===1)c1++
+// }
+// let i = 0
+// for(i ; i<c0 ;i++){
+//     arr[i] = 0 
+// }
+// for(let k = i ; k<arr.length ;k++){
+//     arr[k] = 1 
+// }
+// console.log(arr);
