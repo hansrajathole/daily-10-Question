@@ -99,16 +99,33 @@
 //========================================
 //--sift all negative number in right side
 
-let arr = [10,12,-5,-6,8,-3,7]
-let neg = arr.length-1
-for(let i = arr.length-1 ; i>0 ; i--){
-    if(arr[i]<0){
-        let temp = arr[neg]
-        arr[neg] = arr[i]
-        arr[i] = temp
-        neg--
-    }
-}
-console.log(arr);
+// let arr = [10,12,-5,-6,8,-3,7]
+// let neg = arr.length-1
+// for(let i = arr.length-1 ; i>0 ; i--){
+//     if(arr[i]<0){
+//         let temp = arr[neg]
+//         arr[neg] = arr[i]
+//         arr[i] = temp
+//         neg--
+//     }
+// }
+// console.log(arr);
+
+
+//========================================
+//------sift all zero in right side-------
+
+// let arr = [1,0,0,1,1,0,1]
+// let neg = arr.length-1
+// for(let i = arr.length-1 ; i>0 ; i--){
+//     if(arr[i]<1){
+//         let temp = arr[neg]
+//         arr[neg] = arr[i]
+//         arr[i] = temp
+//         neg--
+//     }
+// }
+// console.log(arr);
+
 
 
