@@ -77,3 +77,38 @@
 // }
 // console.log(arr);
 
+
+
+
+//=======================================
+//----- left rotation by k times --------
+
+// let arr = [10,20,30,40,50,60]
+// let k = 3
+// for(let n = 0 ; n<k ; n++){
+//     let temp = arr[arr.length-1]
+//     for(let i = arr.length-1 ; i>0 ; i--){
+//         arr[i] = arr[i-1]
+//     }
+//     arr[0] = temp
+// }
+// console.log(arr);
+
+
+
+//========================================
+//--sift all negative number in right side
+
+let arr = [10,12,-5,-6,8,-3,7]
+let neg = arr.length-1
+for(let i = arr.length-1 ; i>0 ; i--){
+    if(arr[i]<0){
+        let temp = arr[neg]
+        arr[neg] = arr[i]
+        arr[i] = temp
+        neg--
+    }
+}
+console.log(arr);
+
+
