@@ -35,6 +35,33 @@
 //----- right rotation by on step ------
 
 
+// let arr = [10,20,30,40,50,60]
+// let temp = arr[0]
+// for(let i = 0 ; i<arr.length-1 ; i++){
+//     arr[i] = arr[i+1]
+// }
+// arr[arr.length-1] = temp
+// console.log(arr);
+
+
+
+
+//=====================================
+//reverse array by two pointer algorithm
+
+// let arr = [10,20,30,40,50,60]
+
+// let left = 0
+// let right = arr.length-1
+// while(left<right){
+//     let temp = arr[left]
+//     arr[left] = arr[right]
+//     arr[right] = temp
+//     left++
+//     right--
+// }
+// console.log(arr);
+
 
 
 
