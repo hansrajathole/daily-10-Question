@@ -132,17 +132,61 @@
 //============================================
 //----find the maximum pair count of one -----
 
+// print by using method
+// let arr = [1,1,0,0,1,1,0,1,1,1,0,1]
+// let max = 0
+// let count = 0
+// for(let i = 0 ; i<arr.length ;i++){
+//     if(arr[i]===1){
+//         count++
+//         max = Math.max(max,count)
+//     }
+//     else{
+//         count = 0
+//     }
+// }
+// console.log(`maximum pair of one ${max}`);
 
+
+
+
+// print without using method
 let arr = [1,1,0,0,1,1,0,1,1,1,0,1]
-let max = 0
+let store = 0
 let count = 0
 for(let i = 0 ; i<arr.length ;i++){
     if(arr[i]===1){
         count++
-        max = Math.max(max,count)
     }
     else{
-        count = 0
+        if(count>store){
+            store = count
+            count = 0
+        }else{
+            count = 0
+        }
     }
 }
-console.log(`maximum pair of one ${max}`);
+console.log(`maximum pair of one ${store}`);
+
+
+
+
+//==============================================
+//---------Linear search algorithm -------------
+
+// let arr = [2,4,6,8,9,10,55,66,34,90]
+// let x =  67
+// let index = -1
+// for(let i = 0 ; i<arr.length ; i++){
+//     if(arr[i]===x){
+//         index = i
+//         break        
+//     }
+// }
+
+// if(index === -1){
+//     console.log(x+" is not axist");
+// }else{
+//     console.log(x+" is found at "+index);
+// }`
