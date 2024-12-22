@@ -64,4 +64,16 @@
 
 
 
+//======================================
+//------right rotation by k times ------
+// let arr = [10,20,30,40,50,60]
+// let k = 3
+//     for(let n = 0 ; n<k ; n++){
+//         let temp = arr[0]
+//         for(let i = 0 ; i<arr.length-1 ; i++){
+//             arr[i] = arr[i+1]
+//         }
+//         arr[arr.length-1] = temp
+// }
+// console.log(arr);
 
