@@ -151,23 +151,23 @@
 
 
 // print without using method
-let arr = [1,1,0,0,1,1,0,1,1,1,0,1]
-let store = 0
-let count = 0
-for(let i = 0 ; i<arr.length ;i++){
-    if(arr[i]===1){
-        count++
-    }
-    else{
-        if(count>store){
-            store = count
-            count = 0
-        }else{
-            count = 0
-        }
-    }
-}
-console.log(`maximum pair of one ${store}`);
+// let arr = [1,1,0,0,1,1,0,1,1,1,0,1]
+// let store = 0
+// let count = 0
+// for(let i = 0 ; i<arr.length ;i++){
+//     if(arr[i]===1){
+//         count++
+//     }
+//     else{
+//         if(count>store){
+//             store = count
+//             count = 0
+//         }else{
+//             count = 0
+//         }
+//     }
+// }
+// console.log(`maximum pair of one ${store}`);
 
 
 
@@ -190,3 +190,27 @@ console.log(`maximum pair of one ${store}`);
 // }else{
 //     console.log(x+" is found at "+index);
 // }`
+
+
+
+//=============================================
+//------------binary search -------------------
+
+let arr = [10,20,30,40,50,60]
+let n = 60
+let start = 0 
+let end = arr.length-1
+while(1){
+    let mid = Math.floor((start+end)/2)
+    if(arr[mid]===n){
+         console.log(mid);
+         break
+    }
+    else if(arr[mid]<n){
+        start = mid+1
+    }
+    else{
+        end = mid-1
+    }
+}
+
