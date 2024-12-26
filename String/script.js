@@ -63,22 +63,54 @@
 //===========================================
 // count vowels and consonant\
 
-let str = "hello world 12334"
-let countVowels = 0
-let countConsonant = 0
-let countSpace = 0
-let countNumber = 0
-for(let i = 0 ; i<str.length ; i++){
-   let char = str.charAt(i)
-   if(char === "a"|| char === "e" || char ==="i" || char==="o" || char==="u")countVowels++
-   else if(char===" ")countSpace++
-   else if(str.charCodeAt(i)>=48 && str.charCodeAt(i)<=57)countNumber++
-   else countConsonant++
+// let str = "hello world 12334"
+// let countVowels = 0
+// let countConsonant = 0
+// let countSpace = 0
+// let countNumber = 0
+// for(let i = 0 ; i<str.length ; i++){
+//    let char = str.charAt(i)
+//    if(char === "a"|| char === "e" || char ==="i" || char==="o" || char==="u")countVowels++
+//    else if(char===" ")countSpace++
+//    else if(str.charCodeAt(i)>=48 && str.charCodeAt(i)<=57)countNumber++
+//    else countConsonant++
 
-}
+// }
 
-console.log(`vowels count ${countVowels}, and space count ${countSpace}, and consonant count ${countConsonant} and count Number ${countNumber}`);
+// console.log(`vowels count ${countVowels}, and space count ${countSpace}, and consonant count ${countConsonant} and count Number ${countNumber}`);
 
+
+
+//==============================================
+// togle the charactot 
+// 
+// let str =  "hanSrAj"
+// let result =  ''
+// //first way
+// for(let i = 0 ; i<str.length ; i++){
+//    if(str.charCodeAt(i)>=65 && str.charCodeAt(i)<=90){
+//       result += str.charAt(i).toLowerCase()
+      
+//    }
+//    if(str.charCodeAt(i)>=97 && str.charCodeAt(i)<=122){
+//       result += str.charAt(i).toUpperCase()
+//    }
+// }
+// console.log(result);
+
+
+
+// let str = "AbCd";
+// let result = ""
+// for(let i =0 ; i<str.length ; i++){
+//    if(str.charAt(i) === str.charAt(i).toUpperCase()){
+//          result += str.charAt(i).toLowerCase() 
+//    }
+//    else{
+//       result += str.charAt(i).toUpperCase()
+//    }
+// }
+// console.log(result)
 
 
 

@@ -300,3 +300,18 @@
 // }
 // console.log(arr);
 
+
+
+
+//=========================================================
+// print sub array
+
+let arr = [2,4,6,8,10]
+
+for(let i = 0 ; i<arr.length ; i++){
+    for(let j = 1; j<arr.length ; j++){
+        let subarray = arr.slice(i,j+1)
+        console.log(subarray);
+        
+    }
+}
