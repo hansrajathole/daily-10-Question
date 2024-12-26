@@ -1,5 +1,5 @@
 //===================================================
-// print all charactor in next line
+// ---------print all charactor in next line --------
 // let s = "hansraj"
 
 //first way
@@ -16,8 +16,8 @@
 
 
 
-//==========================================
-// reverse string 
+//====================================================
+// --------------reverse string ----------------------
 // let str = "hello"
 // let str2 = ''
 // for(let i = str.length-1 ; i>=0 ;i--){
@@ -29,8 +29,8 @@
 
 
 
-//==========================================
-// check the string pallindrom or not 
+//====================================================
+//---------check the string pallindrom or not -------- 
 
 // let str = "mom"
 // let str2 = ''
@@ -60,8 +60,8 @@
 
 
 
-//===========================================
-// count vowels and consonant\
+//====================================================
+//-------------count vowels and consonant-------------
 
 // let str = "hello world 12334"
 // let countVowels = 0
@@ -81,8 +81,8 @@
 
 
 
-//==============================================
-// togle the charactot 
+//=====================================================
+//-------------- togle the charactor ------------------ 
 // 
 // let str =  "hanSrAj"
 // let result =  ''
@@ -114,3 +114,25 @@
 
 
 
+//========================================================
+//------count the valid words ------------------
+
+// let words = ["pay" , "attre","practice", "attend"]
+// let pref = "at"
+// let count = 0
+// for(let i = 0 ; i<words.length ; i++){
+//    if(words[i].startsWith(pref))count++
+// }
+// console.log(count);
+
+
+
+
+
+//=====================================================
+//
+// let sentence = "hello bhai kaise ho"
+// let arr = sentence.split(" ")
+// for(let i = 0 ; sentence.length ; i++){
+//    console.log(arr[i].charAt(0).toUpperCase()+arr[i].substring(1));
+// }
