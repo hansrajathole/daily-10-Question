@@ -319,7 +319,7 @@
 //====================================================
 
 
-let myArray = [1,2,3,4,5]
+let myArray = [1,2,3,4,5,6,4,4,2,3,1,]
 
 let obj = new Set(myArray)
 console.log(obj);
