@@ -136,3 +136,97 @@
 // for(let i = 0 ; sentence.length ; i++){
 //    console.log(arr[i].charAt(0).toUpperCase()+arr[i].substring(1));
 // }
+
+
+
+//====================================================
+//-----------count the frequency ---------------------
+
+// let str = "aaabbccddd"
+// let arr = new Array(26).fill(0)
+// for(let i = 0 ; i<str.length ; i++){
+//     let ascii = str.charCodeAt(i)
+//     arr[ascii-97]++
+// }
+
+// for(let i = 0; i<arr.length; i++){
+//     if(arr[i]>0){
+//         console.log(String.fromCharCode(i+97)+" "+arr[i]);
+//     }
+// }
+
+
+//=====================================================
+
+
+// let str1 = "taste"
+// let str2 = "state"
+
+// let arr = new Array(26).fill(0)
+
+
+// if(str1.length !== str2.length){
+//     console.log("not an anagram");
+// }else{
+//     for(let i = 0 ; i<str1.length ; i++){
+//         let ascii1 = str1.charCodeAt(i)
+//         let ascii2 = str2.charCodeAt(i)
+//         arr[ascii1-97] = arr[ascii1-97] + 1
+//         arr[ascii2-97]= arr[ascii2-97] - 1
+        
+//     }
+   
+    
+//     let isAnagram = true
+//     for(let i = 0 ; i<26 ; i++){
+//             if(arr[i]>0){
+//                 isAnagram = false
+//                 break
+//             }
+//         }
+//     if(isAnagram){
+//         console.log("anagram");
+//     }else{
+//         console.log("not anagram");
+        
+//     }    
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//===============================================================
+//===============================================================
+//===============================================================
+//
+
+
+function fun(){
+    console.log(arguments);
+    console.log(this);
+    
+}
+fun(10,23,45,67)
+
+
+const arrowfun = ()=>{
+    console.log(this);
+    
+}
+arrowfun()
