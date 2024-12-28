@@ -1,4 +1,4 @@
-
+const prompt = require("prompt-sync")({sigint: true});
 //====================================================
 //====================================================
 // --------------- Right 1 elem rotate----------------
@@ -319,7 +319,18 @@
 //====================================================
 
 
-let myArray = [1,2,3,4,5,6,4,4,2,3,1,]
+// let myArray = [6,9,1,2,3,4,5,6,4,4,2,3,1,]
+// //---Array to set with romoving duplicate vlaue
+// let obj = new Set(myArray)
+// obj.add(10)// Add a value
+// obj.delete(2)// Remove 2 from obj
+// console.log(obj.size); // size of obj
+// console.log(obj.has(6));// true
+// console.log(obj);
 
-let obj = new Set(myArray)
-console.log(obj);
+// //---set to Array
+// console.log([...obj]);
+
+
+let n = Number(prompt("enter any number"))
+console.log(n);
