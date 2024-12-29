@@ -235,6 +235,24 @@ const prompt = require("prompt-sync")({sigint:true});
 // console.log(Math.sqrt(x2+y2));
 
 
+//====================================================
+//check string and string of new keyword is same 
+
+let str1 = "Tony"
+let str2 = "Tony"
+
+let str3 = new String("Tony")
+
+if(str1 === str2)console.log("given string is same ");
+else console.log("given string is not same");
+
+if(str1===str3)console.log("given string is same ");
+else console.log("given string is not same");
+
+
+
+
+
 
 
 
