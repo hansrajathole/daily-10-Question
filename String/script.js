@@ -163,7 +163,7 @@ const prompt = require("prompt-sync")({sigint:true});
 //====================================================
 //-----------count the frequency ---------------------
 
-let str = "aaabbccddd"
+let str = "hello"
 let arr = new Array(26).fill(0)
 for(let i = 0 ; i<str.length ; i++){
     let ascii = str.charCodeAt(i)
@@ -180,7 +180,7 @@ for(let i = 0; i<arr.length; i++){
 
 
 //=====================================================
-
+// --------------check Anagrams -----------------------
 
 // let str1 = "taste"
 // let str2 = "state"
@@ -189,31 +189,32 @@ for(let i = 0; i<arr.length; i++){
 
 
 // if(str1.length !== str2.length){
-//     console.log("not an anagram");
-// }else{
-//     for(let i = 0 ; i<str1.length ; i++){
-//         let ascii1 = str1.charCodeAt(i)
-//         let ascii2 = str2.charCodeAt(i)
-//         arr[ascii1-97] = arr[ascii1-97] + 1
-//         arr[ascii2-97]= arr[ascii2-97] - 1
-        
-//     }
+//    console.log("not a Anagrams");
    
-    
-//     let isAnagram = true
-//     for(let i = 0 ; i<26 ; i++){
-//             if(arr[i]>0){
-//                 isAnagram = false
-//                 break
-//             }
-//         }
-//     if(isAnagram){
-//         console.log("anagram");
-//     }else{
-//         console.log("not anagram");
-        
-//     }    
+// }else{
+//    for (let i = 0; i < str1.length; i++) {
+//       let ascii1 = str1.charCodeAt(i)
+//       let ascii2 = str2.charCodeAt(i)
+
+//       arr[ascii1 - 97]++
+//       arr[ascii2 - 97]--
+      
+//    }
+//    let isAnagram = true
+//    for(let i = 0 ; i<arr.length ; i++){
+//       if(arr[i]>0){
+//          isAnagram = false
+//          break
+//       }
+//    }
+
+//    if(isAnagram) console.log("given string is anagram");
+//    else console.log("given string is not a anagram");
+   
+   
 // }
+
+
 
 
 
@@ -231,8 +232,6 @@ for(let i = 0; i<arr.length; i++){
 //===============================================================
 //===============================================================
 //
-
-
 // function fun(){
 //     console.log(arguments);
 //     console.log(this);
