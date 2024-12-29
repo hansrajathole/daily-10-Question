@@ -115,6 +115,25 @@ const prompt = require("prompt-sync")({sigint:true});
 // console.log(result)
 
 
+// let str = prompt("Enter the String :- ");
+// let newString = ''
+// console.log(str.charCodeAt(0));
+
+// for(let i = 0 ; i<str.length ; i++){
+//     let ascii = str.charCodeAt(i) 
+//     if(ascii>=65 && ascii<=96){
+//         newString += String.fromCharCode(ascii+32)
+        
+//     }else{
+//         newString += String.fromCharCode(ascii-32)
+//     }
+// }
+
+// console.log(newString);
+
+
+
+
 
 //========================================================
 //------count the valid words ------------------
@@ -135,7 +154,7 @@ const prompt = require("prompt-sync")({sigint:true});
 //
 // let sentence = "hello bhai kaise ho"
 // let arr = sentence.split(" ")
-// for(let i = 0 ; sentence.length ; i++){
+// for(let i = 0 ; i<arr.length ; i++){
 //    console.log(arr[i].charAt(0).toUpperCase()+arr[i].substring(1));
 // }
 
@@ -144,18 +163,18 @@ const prompt = require("prompt-sync")({sigint:true});
 //====================================================
 //-----------count the frequency ---------------------
 
-// let str = "aaabbccddd"
-// let arr = new Array(26).fill(0)
-// for(let i = 0 ; i<str.length ; i++){
-//     let ascii = str.charCodeAt(i)
-//     arr[ascii-97]++
-// }
+let str = "aaabbccddd"
+let arr = new Array(26).fill(0)
+for(let i = 0 ; i<str.length ; i++){
+    let ascii = str.charCodeAt(i)
+    arr[ascii-97]++
+}
 
-// for(let i = 0; i<arr.length; i++){
-//     if(arr[i]>0){
-//         console.log(String.fromCharCode(i+97)+" "+arr[i]);
-//     }
-// }
+for(let i = 0; i<arr.length; i++){
+    if(arr[i]>0){
+        console.log(String.fromCharCode(i+97)+" "+arr[i]);
+    }
+}
 
 
 //=====================================================
@@ -213,7 +232,7 @@ const prompt = require("prompt-sync")({sigint:true});
 
 
 //=============================================================
-//------------------- print reverse the string ----------------
+//------------- check given string pallindrom or not ----------
 
 // let str = "madam"
 // let str2 = ""
@@ -248,6 +267,8 @@ const prompt = require("prompt-sync")({sigint:true});
 
 //     }
 // }
+// if(isPall)console.log("Pallindrom string");
+// else console.log("not pallindrom string");
 
 
 //=========================================================
@@ -271,19 +292,6 @@ const prompt = require("prompt-sync")({sigint:true});
 
 //============================================================
 
-let str = prompt("Enter the String :- ");
-let newString = ''
-for(let i = 0 ; i<str.length ; i++){
-    let ascii = str.charCodeAt(i) 
-    if(ascii>=65 && ascii<=96){
-        newString += String.fromCharCode(ascii+32)
-        
-    }else{
-        newString += String.fromCharCode(ascii-32)
-    }
-}
-
-console.log(newString);
 
 
 
