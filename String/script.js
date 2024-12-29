@@ -163,18 +163,18 @@ const prompt = require("prompt-sync")({sigint:true});
 //====================================================
 //-----------count the frequency ---------------------
 
-let str = "hello"
-let arr = new Array(26).fill(0)
-for(let i = 0 ; i<str.length ; i++){
-    let ascii = str.charCodeAt(i)
-    arr[ascii-97]++
-}
+// let str = "hello"
+// let arr = new Array(26).fill(0)
+// for(let i = 0 ; i<str.length ; i++){
+//     let ascii = str.charCodeAt(i)
+//     arr[ascii-97]++
+// }
 
-for(let i = 0; i<arr.length; i++){
-    if(arr[i]>0){
-        console.log(String.fromCharCode(i+97)+" "+arr[i]);
-    }
-}
+// for(let i = 0; i<arr.length; i++){
+//     if(arr[i]>0){
+//         console.log(String.fromCharCode(i+97)+" "+arr[i]);
+//     }
+// }
 
 
 
@@ -215,7 +215,24 @@ for(let i = 0; i<arr.length; i++){
 // }
 
 
+//===================================================
+// rout containing 4 direction (E,W,N,S)------
+// let str = "WNEENESENNN"
+// let x = 0
+// let y = 0
 
+// for(let i = 0 ; i<str.length ; i++){
+//    let char = str.charAt(i)
+//    if(char === "N")y++
+//    else if(char === "S") y--
+//    else if(char === "W") x--
+//    else x++
+// }
+
+// let x2 = x*x
+// let y2 = y*y
+
+// console.log(Math.sqrt(x2+y2));
 
 
 
