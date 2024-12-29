@@ -15,6 +15,7 @@ const prompt = require("prompt-sync")({sigint:true});
 // }
 
 
+ 
 
 
 
@@ -23,7 +24,7 @@ const prompt = require("prompt-sync")({sigint:true});
 // let str = "hello"
 // let str2 = ''
 // for(let i = str.length-1 ; i>=0 ;i--){
-//     str2 += str.charAt(i)
+//     str2 += str.charAt(i )
 // }
 // console.log(str2);
 
@@ -63,7 +64,7 @@ const prompt = require("prompt-sync")({sigint:true});
 
 
 //====================================================
-//-------------count vowels and consonant-------------
+//count vowels and consonant space and Numbers -------
 
 // let str = "hello world 12334"
 // let countVowels = 0
@@ -101,7 +102,7 @@ const prompt = require("prompt-sync")({sigint:true});
 // console.log(result);
 
 
-
+// Second way
 // let str = "AbCd";
 // let result = ""
 // for(let i =0 ; i<str.length ; i++){
@@ -114,16 +115,14 @@ const prompt = require("prompt-sync")({sigint:true});
 // }
 // console.log(result)
 
-
+// Third way
 // let str = prompt("Enter the String :- ");
 // let newString = ''
-// console.log(str.charCodeAt(0));
 
 // for(let i = 0 ; i<str.length ; i++){
 //     let ascii = str.charCodeAt(i) 
 //     if(ascii>=65 && ascii<=96){
 //         newString += String.fromCharCode(ascii+32)
-        
 //     }else{
 //         newString += String.fromCharCode(ascii-32)
 //     }
@@ -235,24 +234,55 @@ const prompt = require("prompt-sync")({sigint:true});
 // console.log(Math.sqrt(x2+y2));
 
 
+//===================================================
+// -------------- print sub string ------------------
+
+// let str = "hansraj"
+// first way by using predefine method
+// console.log(str.substring(0,5));
+
+// second way without predifine method
+// let k = 5
+// let str2 = ""
+// for(let i = 0 ; i<k ;i++){
+//    str2 += str.charAt(i)
+// }
+
+// console.log(str2);
+
+
 //====================================================
 //check string and string of new keyword is same 
 
-let str1 = "Tony"
-let str2 = "Tony"
+// let str1 = "Tony"
+// let str2 = "Tony"
 
-let str3 = new String("Tony")
+// let str3 = new String("Tony")
 
-if(str1 === str2)console.log("given string is same ");
-else console.log("given string is not same");
+// if(str1 === str2)console.log("given string is same ");
+// else console.log("given string is not same");
 
-if(str1===str3)console.log("given string is same ");
-else console.log("given string is not same");
+// if(str1===str3)console.log("given string is same ");
+// else console.log("given string is not same");
+
+// if(str1.localeCompare(str3)) console.log("same ");
+// else console.log("not same");
+
+// if(Object.is(str1,str3)) console.log("same");
+// else console.log("not same");
 
 
 
 
 
+
+
+
+
+
+//==========================================================
+
+ 
 
 
 
