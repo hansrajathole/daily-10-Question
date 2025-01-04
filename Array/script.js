@@ -333,7 +333,7 @@ const prompt = require("prompt-sync")({sigint: true});
 
 
 
-let arr = [5,8,1,2,5,6,7,8,6,6,34,34,4,4,5,34]
+// let arr = [5,8,1,2,5,6,7,8,6,6,34,34,4,4,5,34]
 
 // first way
 // for(let i = 0 ; i<arr.length ; i++){
@@ -351,15 +351,36 @@ let arr = [5,8,1,2,5,6,7,8,6,6,34,34,4,4,5,34]
 
 
 // Second way
-for(let i = 0 ; i<arr.length ; i++){
-    let count = 1
-    if(arr[i]!=-1){
-        for(let j = i+1 ; j<arr.length ; j++){
-            if(arr[i]==arr[j] ){
-                arr[j] = -1
-                count++
-            }
+// for(let i = 0 ; i<arr.length ; i++){
+//     let count = 1
+//     if(arr[i]!=-1){
+//         for(let j = i+1 ; j<arr.length ; j++){
+//             if(arr[i]==arr[j] ){
+//                 arr[j] = -1
+//                 count++
+//             }
+//         }
+//         console.log(arr[i],count)
+//     }
+// }
+
+
+// count sum of sub array 
+
+let arr = [1,2,3,7,5,12]
+let sum = 12
+let count = 0
+
+for(let i = 0 ; i<arr.length ;i++){
+    let arrSum = 0
+    for(let j = i ; j<arr.length ; j++){
+        arrSum+=arr[j]
+        if(arrSum == sum){
+            count++
         }
-        console.log(arr[i],count)
+        if(arrSum>sum){
+            break
+        }
     }
 }
+console.log(count);
