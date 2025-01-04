@@ -332,5 +332,34 @@ const prompt = require("prompt-sync")({sigint: true});
 // console.log([...obj]);
 
 
-let n = Number(prompt("enter any number"))
-console.log(n);
+
+let arr = [5,8,1,2,5,6,7,8,6,6,34,34,4,4,5,34]
+
+// first way
+// for(let i = 0 ; i<arr.length ; i++){
+//     let count = 1
+//     for(let j = i ; j<arr.length ; j++){
+//         if(arr[i]>=0 && arr[i]==arr[j+1] ){
+//             arr[j+1] = -1
+//             count++
+//         }
+//     }
+//    if(arr[i]>=0){
+//     console.log(arr[i],count)
+//    }
+// }
+
+
+// Second way
+for(let i = 0 ; i<arr.length ; i++){
+    let count = 1
+    if(arr[i]!=-1){
+        for(let j = i+1 ; j<arr.length ; j++){
+            if(arr[i]==arr[j] ){
+                arr[j] = -1
+                count++
+            }
+        }
+        console.log(arr[i],count)
+    }
+}
