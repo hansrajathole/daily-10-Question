@@ -332,7 +332,7 @@ const prompt = require("prompt-sync")({sigint: true});
 // console.log([...obj]);
 
 
-
+//====================================================
 // let arr = [5,8,1,2,5,6,7,8,6,6,34,34,4,4,5,34]
 
 // first way
@@ -364,23 +364,75 @@ const prompt = require("prompt-sync")({sigint: true});
 //     }
 // }
 
-
+//=====================================================
 // count sum of sub array 
+// let arr = [1,2,3,7,5,12]
+// let sum = 12
+// let count = 0
 
-let arr = [1,2,3,7,5,12]
-let sum = 12
-let count = 0
+// for(let i = 0 ; i<arr.length ;i++){
+//     let arrSum = 0
+//     for(let j = i ; j<arr.length ; j++){
+//         arrSum+=arr[j]
+//         if(arrSum == sum){
+//             count++
+//         }
+//         if(arrSum>sum){
+//             break
+//         }
+//     }
+// }
+// console.log(count);
 
-for(let i = 0 ; i<arr.length ;i++){
-    let arrSum = 0
-    for(let j = i ; j<arr.length ; j++){
-        arrSum+=arr[j]
-        if(arrSum == sum){
-            count++
-        }
-        if(arrSum>sum){
-            break
-        }
+
+// let size = Number(prompt("enter size of array :"))
+// let arr = new Array(size)
+// for(let i = 0 ; i <size; i++){
+//     arr[i] = Number(prompt("enter the element :"))
+// }
+
+// console.log(arr);
+
+
+//======================================================
+// ------------------sum of array -------------------
+// let size = Number(prompt("enter size of array :"))
+// let arr = new Array(size)
+// for(let i = 0 ; i <size; i++){
+//     arr[i] = Number(prompt("enter the element :"))
+// }
+// let sum = 0 
+// for(let i = 0 ;i<arr.length;i++){
+//     sum+=arr[i]
+// }
+// console.log(sum);
+
+
+
+//=====================================================
+// ----------- find max elem of the array ------------
+// let arr = [34,56,9,36,98,12,33]
+// let max = arr[0]
+
+// for(let i = 0 ; i<arr.length ; i++){
+//     if(arr[i]>max){
+//         max = arr[i]
+//     }
+// }
+// console.log(max);
+
+let arr = [34,56,9,36,98,98,12,33,60]
+let max = Math.max(arr[0],arr[1])
+let secondMax = Math.min(arr[0],arr[1])
+
+for(let i = 2 ; i<arr.length ; i++){
+    if(arr[i]>max){
+        secondMax = max
+        max = arr[i]
+    }
+    else if(arr[i]>secondMax && arr[i]<max){
+        secondMax = arr[i]
     }
 }
-console.log(count);
+console.log(secondMax);
+
