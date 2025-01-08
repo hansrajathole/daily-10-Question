@@ -421,18 +421,55 @@ const prompt = require("prompt-sync")({sigint: true});
 // }
 // console.log(max);
 
-let arr = [34,56,9,36,98,98,12,33,60]
-let max = Math.max(arr[0],arr[1])
-let secondMax = Math.min(arr[0],arr[1])
+// let arr = [34,56,9,36,98,98,12,33,60]
+// let max = Math.max(arr[0],arr[1])
+// let secondMax = Math.min(arr[0],arr[1])
 
-for(let i = 2 ; i<arr.length ; i++){
-    if(arr[i]>max){
-        secondMax = max
-        max = arr[i]
-    }
-    else if(arr[i]>secondMax && arr[i]<max){
-        secondMax = arr[i]
-    }
+// for(let i = 2 ; i<arr.length ; i++){
+//     if(arr[i]>max){
+//         secondMax = max
+//         max = arr[i]
+//     }
+//     else if(arr[i]>secondMax && arr[i]<max){
+//         secondMax = arr[i]
+//     }
+// }
+// console.log(secondMax);
+
+
+//============================================
+// let size = Number(prompt("enter size of array :"))
+// let arr = new Array(size)
+// for(let i = 0 ; i <size; i++){
+//     arr[i] = Number(prompt("enter the element :"))
+// }
+
+// let NewArr = new Array(arr.length)
+// let j = 0
+// for(let i = NewArr.length-1 ; i>=0 ; i-- ){
+//     NewArr[j] = arr[i]
+//     j++
+// }
+
+// let j = 0
+// let i = arr.length-1
+// while(j<i){
+//     let temp = arr[i]
+//     arr[i] = arr[j]
+//     arr[j] = temp
+//     j++
+//     i--
+// }
+
+// console.log(arr);
+
+
+//========================================================
+
+let arr = [1,2,3,4,5]
+let temp = arr[0]
+for(let i = 0 ; i<arr.length;i++){
+    arr[i]=arr[i+1]
 }
-console.log(secondMax);
-
+arr[arr.length-1] = temp
+console.log(arr);
