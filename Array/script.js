@@ -466,10 +466,43 @@ const prompt = require("prompt-sync")({sigint: true});
 
 //========================================================
 
-let arr = [1,2,3,4,5]
-let temp = arr[0]
-for(let i = 0 ; i<arr.length;i++){
-    arr[i]=arr[i+1]
+// let arr = [1,2,3,4,5]
+// let temp = arr[0]
+// for(let i = 0 ; i<arr.length;i++){
+//     arr[i]=arr[i+1]
+// }
+// arr[arr.length-1] = temp
+// console.log(arr);
+
+
+//==========================================================
+
+
+let arr1 = [1,2,3,4]
+let arr2 = [2,5,7]
+
+let newArr = new Array(arr1.length+arr2.length).fill(0)
+let j = 0
+let i = 0 
+let k  = 0
+while(i<arr1.length && j<arr2.length){
+    if(arr1[i]<arr2[j]){
+        newArr[k++] = arr1[i]
+        i++
+    }else{
+        newArr[k++] += arr2[j]
+        j++
+    }
 }
-arr[arr.length-1] = temp
-console.log(arr);
+
+while(i<arr1.length){
+    newArr[k++] = arr1[i++]
+}
+while(j<arr2.length){
+    newArr[k++] = arr2[j++]
+}
+
+console.log(newArr);
+
+
+
