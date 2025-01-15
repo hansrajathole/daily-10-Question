@@ -478,31 +478,97 @@ const prompt = require("prompt-sync")({sigint: true});
 //==========================================================
 
 
-let arr1 = [1,2,3,4]
-let arr2 = [2,5,7]
+// let arr1 = [1,2,3,4]
+// let arr2 = [2,5,7]
 
-let newArr = new Array(arr1.length+arr2.length).fill(0)
-let j = 0
-let i = 0 
-let k  = 0
-while(i<arr1.length && j<arr2.length){
-    if(arr1[i]<arr2[j]){
-        newArr[k++] = arr1[i]
-        i++
-    }else{
-        newArr[k++] += arr2[j]
-        j++
+// let newArr = new Array(arr1.length+arr2.length).fill(0)
+// let j = 0
+// let i = 0 
+// let k  = 0
+// while(i<arr1.length && j<arr2.length){
+//     if(arr1[i]<arr2[j]){
+//         newArr[k++] = arr1[i]
+//         i++
+//     }else{
+//         newArr[k++] += arr2[j]
+//         j++
+//     }
+// }
+
+// while(i<arr1.length){
+//     newArr[k++] = arr1[i++]
+// }
+// while(j<arr2.length){
+//     newArr[k++] = arr2[j++]
+// }
+
+// console.log(newArr);
+
+
+
+// ==============================================================
+//----------------------------- SET -----------------------------
+
+// let arr = [10,20,30,10,20,40,20]
+// let set = new Set(arr)
+// console.log(set);
+
+// let arr = [10,12,10,12,4,1,2,4,2]
+// let set = new Set()
+
+// for(let i = 0 ; i<arr.length ; i++){
+//     if(set.has(arr[i])){
+//         set.delete(arr[i])
+//     }else{
+//         set.add(arr[i])
+//     }
+// }
+
+// console.log(set);
+
+
+//======================================================
+//---------- find the frequency using map --------------
+
+// let arr = [2,1,2,3,1,1,2,2,3,5,6,7,6]
+// let map = new Map()
+
+
+// brute force
+// for(let i = 0 ; i<arr.length ; i++){
+//     if(map.has(arr[i])){
+//         map.set(arr[i],map.get(arr[i])+1)
+//     }else{
+//         map.set(arr[i],1)
+//     }
+// }
+
+// optimal aproach
+// for(let i = 0 ; i<arr.length ; i++){
+//     map.set(arr[i],(map.get(arr[i]) || 0)+1)
+// }
+// map.forEach((elem, value)=>{
+//     console.log(`number ${elem} => ${value},`);
+// })
+
+
+//========================================================
+
+let arr = [2,4,2,1,5,4,6,7,6,4,6]
+let map = new Map()
+
+for(let i = 0 ; i<arr.length ; i++){
+    map.set(arr[i],(map.get(arr[i]) || 0)+1)
+}
+console.log(map);
+map.forEach((elem, val)=>{
+    if(elem == 1){
+        console.log(val);
     }
-}
-
-while(i<arr1.length){
-    newArr[k++] = arr1[i++]
-}
-while(j<arr2.length){
-    newArr[k++] = arr2[j++]
-}
-
-console.log(newArr);
-
-
-
+})
+// for (const key of map.keys()) {
+//     if(map.get(key) == 1){
+//         console.log(key);
+        
+//     }
+// }
