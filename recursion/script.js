@@ -40,3 +40,68 @@ let n = Number(prompt("Enter a number: "));
 //     printNTo1(n-1);
 // }
 // printNTo1(n)
+
+
+//==============================================================
+//========================= sumNterm  ==========================
+
+// let sumNterm = (n)=>{
+//     if(n==1){
+//         return n;
+//     }
+//     return n + sumNterm(n-1);
+// }
+// console.log(sumNterm(n));
+
+
+//==============================================================
+//========================= factorial ==========================
+// let factorial = (n)=>{
+//     if(n==1){
+//         return n;
+//     }
+//     return n * factorial(n-1);
+// }
+// console.log(factorial(n));
+
+//==============================================================
+//========================= sumOfDigit =========================
+// let sumOfDigit = (n)=>{ 
+//     if(n==0){
+//         return 0;
+//     }
+//     return n%10 + sumOfDigit(Math.floor(n/10));
+// }
+// console.log(sumOfDigit(n));
+
+
+//==============================================================    
+//====================== reserseDigit ==========================
+// let rev = 0;
+// let reverseDigit = (n)=>{    
+//     if(n==0) return 0;
+//     rev = rev*10 + n%10;
+//     reverseDigit(Math.floor(n/10)); 
+//     return rev;
+    
+   
+// }
+// console.log(reverseDigit(n,rev));
+
+//==============================================================
+//========================= fibonacii ==========================
+// let fibo = (n)=>{
+//     if(n==0 || n==1) return n;
+//     return fibo(n-1) + fibo(n-2);
+// }
+// console.log(fibo(n));
+
+
+//==============================================================
+//========================= fibo series ========================
+let fiboSeries = (i,j,n)=>{  
+    console.log(j);
+    if(n==1) return;
+    fiboSeries(j,i+j,n-1);
+}
+fiboSeries(0,1,n);
