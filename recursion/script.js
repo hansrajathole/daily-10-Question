@@ -136,7 +136,7 @@ const prompt = require("prompt-sync")({sigint: true});
 
 //==============================================================
 //========================== factor ============================
-let n = Number(prompt("Enter a number: "));
+// let n = Number(prompt("Enter a number: "));
 // let factor = (n,i)=>{
 //     if(i>n/2){
 //         console.log(n);
@@ -177,18 +177,50 @@ let n = Number(prompt("Enter a number: "));
 // }
 
 // factor in loop with sorted
-let i = 0
-for(i = 1; i*i < n ; i++){
-    if(n%i===0){
-        console.log(i);
-    }
-}
-if((i-n/i)==1)i--
-for(;i>=1 ; i--){
-    if(n%i == 0){
-        console.log(n/i);
-    }
-}
+// let i = 0
+// for(i = 1; i*i < n ; i++){
+//     if(n%i===0){
+//         console.log(i);
+//     }
+// }
+// if((i-n/i)==1)i--
+// for(;i>=1 ; i--){
+//     if(n%i == 0){
+//         console.log(n/i);
+//     }
+// }
 
 
 //==============================================================
+//=================== Prime Number =============================
+
+// const n = Number(prompt("enter the number :"))
+// let count = 0
+// const primeN = function(i,n){
+
+//     if(n<=1)return
+//     if(i>n)return
+//     if(n%i==0){
+//         count++
+//     }
+
+//     primeN(i+1,n)
+// }
+// primeN(1,n)
+// if(count == 2)console.log("its prime number");
+// else console.log("its not prime number");
+
+
+// second method 
+// const primeN = function(n){
+//     if(n<=1)return false
+//     if(n==2)return true
+//     if(n%2==0) return false
+//     for(let i = 3 ; i<=Math.floor(Math.sqrt(n));i+=2){
+//         if(n%i==0)return false
+//     }    
+//     return true
+// }
+// if(primeN(n))console.log("its prime number");
+// else console.log("its not prime number");
+
