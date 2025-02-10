@@ -39,15 +39,73 @@ const prompt = require("prompt-sync")({sigint: true});
 //==================================================================
 //========================= bubble sort ============================
 
-let arr = [7, 4, 3, 5, 6, 9,8]
-for(let i = 0 ; i<arr.length-1 ;i++){
-    for(let j = 0 ; j<arr.length-i-1 ;  j++){
-        if(arr[j]>arr[j+1]){
-            let temp = arr[j]
-            arr[j] = arr[j+1] 
-            arr[j+1] = temp  
-        }
-    }
-}
+// let arr = [7, 4, 3, 5, 6, 9,8]
+// for(let i = 0 ; i<arr.length-1 ;i++){
+//     for(let j = 0 ; j<arr.length-i-1 ;  j++){
+//         if(arr[j]>arr[j+1]){
+//             let temp = arr[j]
+//             arr[j] = arr[j+1] 
+//             arr[j+1] = temp  
+//         }
+//     }
+// }
 
-console.log(arr);
+// console.log(arr);
+
+
+//==================================================================
+//========================= merge sort =============================
+// let arr = [9, 6, 10, 3, 8, 1]
+
+// divide(arr, 0 , arr.length-1)
+// function divide(arr, first , last) {
+//     if(first<last){
+//         let mid = first + Math.floor((last-first)/2)
+//         divide(arr, first, mid)
+//         divide(arr, mid+1, last)
+//         conquer(arr, first, mid, last)
+//     }
+    
+// }
+
+// function conquer(arr, first, mid, last) {
+//     let newArr = new Array(last-first+1)
+//     let i = first
+//     let j = mid+1
+//     let k = 0
+
+//     while(i<=mid && j<=last){
+    
+//         if(arr[i]<arr[j]){
+//             newArr[k++] = arr[i++]
+//         }else{
+//             newArr[k++] = arr[j++]
+//         }
+//     }
+
+//     while(i<=mid){
+//         newArr[k++] = arr[i++]
+//     }
+    
+//     while(j<=last){
+//         newArr[k++] = arr[j++]
+//     }
+
+//     for(let i = 0 ; i<newArr.length ; i++){
+//         console.log(newArr[i])
+//     }
+//     console.log(" ");
+    
+
+    
+//     for(let i = 0 ,j = first ; i<newArr.length ; i++, j++){
+//         arr[j] = newArr[i]
+//     }
+//     console.log(first ," ", last);
+    
+// }
+
+// console.log(arr);
+
+
+//================================================================
