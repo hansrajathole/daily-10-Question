@@ -109,3 +109,35 @@ const prompt = require("prompt-sync")({sigint: true});
 
 
 //================================================================
+// ======================= queck sort ============================
+
+let arr = [9, 6, 10, 3, 8, 1]
+
+quickSort(arr, 0, arr.length-1)
+
+function quickSort(arr, first, last) {
+    if(first<last){
+        let pi = partition(arr, first, last)
+        quickSort(arr, first, pi-1)
+        quickSort(arr, pi+1, last)
+    }
+}
+
+function partition(arr, first, last) {
+    let pivot = arr[last]
+    let i = first - 1
+    for(let j = first ; j<=last-1 ; j++){
+        if(arr[j]<=pivot){
+            i++
+            let temp = arr[i]
+            arr[i] = arr[j]
+            arr[j] = temp
+        }
+    }
+    let temp = arr[i+1]
+    arr[i+1] = arr[last]
+    arr[last] = temp
+    return i
+}
+
+console.log(arr);
