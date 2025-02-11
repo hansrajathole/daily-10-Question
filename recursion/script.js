@@ -1,5 +1,5 @@
 const prompt = require("prompt-sync")({sigint: true});
-// let n = Number(prompt("Enter a number: "));
+let n = Number(prompt("Enter a number: "));
 
 //================================================================
 // ======================== print hello world ====================
@@ -58,9 +58,9 @@ const prompt = require("prompt-sync")({sigint: true});
 //========================= factorial ==========================
 // let factorial = (n)=>{
 //     if(n==1){
-//         return n;
+//         return n
 //     }
-//     return n * factorial(n-1);
+//     return n * factorial(n-1)
 // }
 // console.log(factorial(n));
 
@@ -90,12 +90,11 @@ const prompt = require("prompt-sync")({sigint: true});
 
 //==============================================================
 //========================= fibonacii ==========================
-// let fibo = (n)=>{
-//     if(n==0 || n==1) return n;
-//     return fibo(n-1) + fibo(n-2);
-// }
-// console.log(fibo(n));
-
+    // let fibonacci = (n)=>{
+    //     if(n==0 || n==1) return n;
+    //     return fibonacci(n-1)+ fibonacci(n-2)
+    // }
+    // console.log(fibonacci(n));
 
 //==============================================================
 //========================= fibo series ========================
@@ -226,26 +225,26 @@ const prompt = require("prompt-sync")({sigint: true});
 
 
 //using sieve of eratothenes algorithm 
-const n = Number(prompt("Enter a number: "));
+// const n = Number(prompt("Enter a number: "));
 
-const sieveOfEratosthenes = (n) => {
-    let primes = new Array(n + 1).fill(true);
+// const sieveOfEratosthenes = (n) => {
+//     let primes = new Array(n + 1).fill(true);
 
-    primes[0] = primes[1] = false;
+//     primes[0] = primes[1] = false;
 
-    for (let i = 2; i * i <= n; i++) {
-        if (primes[i]) {
-            for (let j = i * i; j <= n; j += i) {
-                primes[j] = false;
-            }
-        }
-    }
+//     for (let i = 2; i * i <= n; i++) {
+//         if (primes[i]) {
+//             for (let j = i * i; j <= n; j += i) {
+//                 primes[j] = false;
+//             }
+//         }
+//     }
 
-    for (let i = 2; i <= n; i++) {
-        if (primes[i]) {
-            console.log(i);
-        }
-    }
-};
+//     for (let i = 2; i <= n; i++) {
+//         if (primes[i]) {
+//             console.log(i);
+//         }
+//     }
+// };
 
-sieveOfEratosthenes(n);
+// sieveOfEratosthenes(n);
