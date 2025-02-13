@@ -165,26 +165,26 @@ const prompt = require("prompt-sync")({sigint: true});
 //=================== Counting Sort ===========================
 
 
-let arr = [1,4,1,3,2,4,3,7]
+// let arr = [1,4,1,3,2,4,3,7]
 
-let largest = -Infinity
-for(let i = 0 ; i<arr.length ; i++){
-    if(arr[i]>largest) largest = arr[i]
-}
+// let largest = -Infinity
+// for(let i = 0 ; i<arr.length ; i++){
+//     if(arr[i]>largest) largest = arr[i]
+// }
 
-let newArr = new Array(largest+1).fill(0)
-for(let i = 0 ; i<arr.length ; i++){
-    newArr[arr[i]]++
-}
-console.log(newArr);
+// let newArr = new Array(largest+1).fill(0)
+// for(let i = 0 ; i<arr.length ; i++){
+//     newArr[arr[i]]++
+// }
+// console.log(newArr);
 
-let j = 0
-for(let i = 0 ; i<arr.length ; i++){
-    while(newArr[i]>0){
-        arr[j] = i
-        j++
-        newArr[i]--
-    }
-}
+// let j = 0
+// for(let i = 0 ; i<arr.length ; i++){
+//     while(newArr[i]>0){
+//         arr[j] = i
+//         j++
+//         newArr[i]--
+//     }
+// }
 
-console.log(arr);
+// console.log(arr);
