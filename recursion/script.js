@@ -248,3 +248,8 @@ let n = Number(prompt("Enter a number: "));
 // };
 
 // sieveOfEratosthenes(n);
+
+
+function towerOfHanoi(){
+    
+}

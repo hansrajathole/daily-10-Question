@@ -122,10 +122,7 @@ class LinkedList {
 }
 
 
-let obj = new LinkedList(50)
-
-
-
+let obj = new LinkedList()
 obj.insertAtFirst(10);
 obj.insertAtFirst(20);
 obj.insertAtFirst(30);
