@@ -1,6 +1,6 @@
 const prompt = require("prompt-sync")({sigint:true});
 class Node{
-    constructor(){
+    constructor(val){
         this.val = val
         this.left = this.right = null
     }
@@ -13,15 +13,36 @@ class Tree{
     createTree(){
         let data = Number(prompt("enter val : "))
         if(data == -1)return null
-        this.root = new Node(data)
+        let newNode = new Node(data)
         console.log("enter left child for"+data);
-        this.root.left = this.createTree()
+        newNode.left = this.createTree()
         console.log("enter right child for"+data);
-        this.root.right = this.createTree()
-
+        newNode.right = this.createTree()
+        return newNode
         
+    }
+    preorder(root){
+        if(root == null)return
+        process.stdout.write(root.val+" ")
+        this.preorder(root.left)
+        this.preorder(root.right)
+    }
+    postorder(root){
+        if(root == null)return
+        this.postorder(root.left)
+        this.postorder(root.right)
+        process.stdout.write(root.val+" ")
+    }
+    inorder(root){
+        if(root == null)return
+        this.inorder(root.left)
+        process.stdout.write(root.val+" ")
+        this.inorder(root.right)
     }
 }
 
 let obj = new Tree()
-obj.createTree()
+obj.root = obj.createTree()
+obj.preorder(obj.root)
+obj.postorder(obj.root)
+obj.inorder(obj.root)
