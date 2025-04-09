@@ -105,24 +105,24 @@
 
 // let ans = time();
 
-function abcd(){
-    let count = []
-    return function(func){
-        count++
-        if(count === 3){
-            func()
-        }else{
-            return
-        }
+// function abcd(){
+//     let count = []
+//     return function(func){
+//         count++
+//         if(count === 3){
+//             func()
+//         }else{
+//             return
+//         }
         
-    }
-}
+//     }
+// }
 
-function dummy(){
-    console.log("mai chala");
-}
+// function dummy(){
+//     console.log("mai chala");
+// }
 
-let ans =abcd()
-ans(dummy)
-ans(dummy)
-ans(dummy)
+// let ans =abcd()
+// ans(dummy)
+// ans(dummy)
+// ans(dummy)
