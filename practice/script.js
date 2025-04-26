@@ -196,21 +196,21 @@
 //=============================================
 //------------binary search -------------------
 
-let arr = [10,20,30,40,50,60]
-let n = 60
-let start = 0 
-let end = arr.length-1
-while(1){
-    let mid = Math.floor((start+end)/2)
-    if(arr[mid]===n){
-         console.log(mid);
-         break
-    }
-    else if(arr[mid]<n){
-        start = mid+1
-    }
-    else{
-        end = mid-1
-    }
-}
+// let arr = [10,20,30,40,50,60]
+// let n = 60
+// let start = 0 
+// let end = arr.length-1
+// while(1){
+//     let mid = Math.floor((start+end)/2)
+//     if(arr[mid]===n){
+//          console.log(mid);
+//          break
+//     }
+//     else if(arr[mid]<n){
+//         start = mid+1
+//     }
+//     else{
+//         end = mid-1
+//     }
+// }
 
