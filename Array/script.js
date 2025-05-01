@@ -554,21 +554,40 @@ const prompt = require("prompt-sync")({sigint: true});
 
 //========================================================
 
-let arr = [2,4,2,1,5,4,6,7,6,4,6]
-let map = new Map()
+// let arr = [2,4,2,1,5,4,6,7,6,4,6]
+// let map = new Map()
 
-for(let i = 0 ; i<arr.length ; i++){
-    map.set(arr[i],(map.get(arr[i]) || 0)+1)
-}
-console.log(map);
-map.forEach((elem, val)=>{
-    if(elem == 1){
-        console.log(val);
-    }
-})
+// for(let i = 0 ; i<arr.length ; i++){
+//     map.set(arr[i],(map.get(arr[i]) || 0)+1)
+// }
+// console.log(map);
+// map.forEach((elem, val)=>{
+//     if(elem == 1){
+//         console.log(val);
+//     }
+// })
 // for (const key of map.keys()) {
 //     if(map.get(key) == 1){
 //         console.log(key);
         
 //     }
 // }
+
+
+
+//====================================================
+//-------------------- GCD ---------------------------
+
+let a = 12 , b = 16 
+
+
+while(a != b){
+    if(a>b){
+        a = a-b
+    }else{
+        b = b-a
+    }
+}
+
+
+console.log(a);
