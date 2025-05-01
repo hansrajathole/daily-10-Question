@@ -578,16 +578,38 @@ const prompt = require("prompt-sync")({sigint: true});
 //====================================================
 //-------------------- GCD ---------------------------
 
-let a = 12 , b = 16 
+// let a = 12 , b = 16 
 
 
-while(a != b){
-    if(a>b){
-        a = a-b
-    }else{
-        b = b-a
+// while(a != b){
+//     if(a>b){
+//         a = a-b
+//     }else{
+//         b = b-a
+//     }
+// }
+
+
+// console.log(a);
+
+
+
+//========================================================
+//------------------ Prime numberr -----------------------
+
+let n = 30 
+let isPrime = new Array(n+1).fill(true)
+
+for(let i = 2 ; i<= Math.floor(Math.sqrt(n)) ; i++){
+    if(isPrime[i]){
+        for(let j = i*i ; j<= n ; j+=i){
+            isPrime[j] = false
+        }
     }
 }
 
-
-console.log(a);
+for(let i = 2 ; i<= n ; i++){
+    if((isPrime[i])){
+        console.log(i);
+    }
+}

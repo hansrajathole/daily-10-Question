@@ -116,19 +116,33 @@
 //=============================================
 // -------print reverse array using recursionn
 
-let arr = [1,2,3,4,5]
-let temp = 0
-function revArr(i,n){
-    if(i>n/2){
-        console.log(arr);
-        return
-    }else{
+// let arr = [1,2,3,4,5]
+// let temp = 0
+// function revArr(i,n){
+//     if(i>n/2){
+//         console.log(arr);
+//         return
+//     }else{
        
-        temp = arr[i]
-        arr[i] = arr[n-1-i]
-        arr[n-1-i] = temp
-        revArr(i+1,n) 
-    }
-}
-let n = arr.length
-revArr(0,n)
+//         temp = arr[i]
+//         arr[i] = arr[n-1-i]
+//         arr[n-1-i] = temp
+//         revArr(i+1,n) 
+//     }
+// }
+// let n = arr.length
+// revArr(0,n)
+
+
+
+//=============================================
+//--------------------GCD ---------------------
+
+// function gcd(a,b){
+//         if(b===0)return a
+//         return gcd(b,a%b)
+// }
+
+// console.log(gcd(234,45));
+
+
